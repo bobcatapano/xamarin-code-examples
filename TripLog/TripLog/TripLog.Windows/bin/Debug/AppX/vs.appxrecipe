@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>AMAZON</Machine>
+    <WindowsUser>rob</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>85930d70-750c-41a6-9b95-03faaed4159c</PackageIdentityName>
+    <PackageIdentityPublisher>CN=joaqu</PackageIdentityPublisher>
+    <IntermediateOutputPath>G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>1C8305C614C2F548A1B8931DE8DC35BA20BB1DF3139A09DF5F123FCB1D96FF16</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>85930d70-750c-41a6-9b95-03faaed4159c_1.0.0.0_neutral__nh7s0b45jarrj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>85930d70-750c-41a6-9b95-03faaed4159c_nh7s0b45jarrj!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>85930d70-750c-41a6-9b95-03faaed4159c</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=joaqu</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-22T20:03:57.532</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\bin\Debug\TripLog.Windows.exe">
+      <PackagePath>TripLog.Windows.exe</PackagePath>
+      <Modified>2016-07-24T23:34:08.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog\bin\Debug\TripLog.dll">
+      <PackagePath>TripLog.dll</PackagePath>
+      <Modified>2016-07-24T23:21:30.698</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-22T19:52:42.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-22T19:52:42.788</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-22T19:52:42.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-22T19:52:42.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\bin\Debug\TripLog.Windows.xr.xml">
+      <PackagePath>TripLog.Windows.xr.xml</PackagePath>
+      <Modified>2016-07-22T20:03:48.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2016-07-22T20:03:49.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2016-07-22T20:03:49.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
+      <Modified>2015-11-17T14:31:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2016-07-24T17:20:53.677</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

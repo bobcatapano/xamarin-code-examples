@@ -1,0 +1,2 @@
+G:\Visual Studio 2015\Projects\BU_Before_Maps_installed_c\TripLog\TripLog\TripLog.Windows\TripLog.Windows.csproj;neutral
+G:\Visual Studio 2015\Projects\BU_Before_Maps_installed_c\TripLog\TripLog\TripLog\TripLog.csproj;neutral
