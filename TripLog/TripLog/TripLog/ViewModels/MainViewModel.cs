@@ -22,13 +22,23 @@ namespace TripLog.ViewModels
             get { return _viewCommand ?? (_viewCommand = new Command<TripLogEntry>(async(entry) => await ExecuteViewCommand(entry))); } }
 
 
+        Command _newCommand;
 
+        public Command NewCommand
+        {
+            get { return _newCommand ?? (_newCommand = new Command(async () => await ExecuteNewCommand())); }
+        }
 
         async Task ExecuteViewCommand(TripLogEntry entry)
         {
             await NavService.NavigateTo<DetailViewModel, TripLogEntry>(entry);
         }
 
+        async Task ExecuteNewCommand()
+        {
+            await NavService.NavigateTo<NewEntryViewModel>();
+
+        }
         ObservableCollection<TripLogEntry> _logEntries;
 
         public ObservableCollection<TripLogEntry> LogEntries

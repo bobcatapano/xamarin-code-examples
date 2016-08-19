@@ -7,6 +7,7 @@ using Xamarin.Forms.Maps;
 using Xamarin.Forms;
 using TripLog.Models;
 using TripLog.Service;
+using TripLog.ViewModels;
 
 namespace TripLog.Views
 {
@@ -17,8 +18,38 @@ namespace TripLog.Views
             get { return BindingContext as DetailViewModel; }
         }
 
+        readonly Map _map;
+
+        private void UpdateMap()
+        {
+            if (_vm.Entry == null)
+                return;
+
+
+            _map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(_vm.Entry.Latitude, _vm.Entry.Longitude), Distance.FromMiles(.5)));
+
+            _map.Pins.Add(new Pin
+            {
+                Type = PinType.Place,
+                //  Label = entry.Title,
+                Position = new Position(_vm.Entry.Latitude, _vm.Entry.Longitude)
+            }
+            );
+        }
+
         public DetailPage()
         {
+            BindingContextChanged += (sender, args) => {
+                    if (_vm == null) return;
+
+                     _vm.PropertyChanged += (s, e) =>
+                      {
+                        if (e.PropertyName == "Entry")
+                        UpdateMap();
+                      };
+            };
+
+
             BindingContext = new DetailViewModel(DependencyService.Get<INavService>());
 
             Title = "Entry Details";
@@ -43,16 +74,18 @@ namespace TripLog.Views
             };
 
 
-            var map = new Map();
-            map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(_vm.Entry.Latitude, _vm.Entry.Longitude), Distance.FromMiles(.5)));
+            // var map = new Map();
+            _map = new Map();
 
-            map.Pins.Add(new Pin
-            {
-                Type = PinType.Place,
-              //  Label = entry.Title,
-                Position = new Position(_vm.Entry.Latitude, _vm.Entry.Longitude)
-            }
-            );
+            //map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(_vm.Entry.Latitude, _vm.Entry.Longitude), Distance.FromMiles(.5)));
+
+            //map.Pins.Add(new Pin
+            //{
+            //    Type = PinType.Place,
+            //  //  Label = entry.Title,
+            //    Position = new Position(_vm.Entry.Latitude, _vm.Entry.Longitude)
+            //}
+            //);
 
             var title = new Label
             {
@@ -102,11 +135,11 @@ namespace TripLog.Views
                // Opacity = .8
             };
 
-            mainLayout.Children.Add(map);
+            mainLayout.Children.Add(_map);
             mainLayout.Children.Add(detailsBg, 0, 1);
             mainLayout.Children.Add(details, 0, 1);
 
-            Grid.SetRowSpan(map, 3);
+            Grid.SetRowSpan(_map, 3);
 
             Content = mainLayout;
             //Content = new StackLayout

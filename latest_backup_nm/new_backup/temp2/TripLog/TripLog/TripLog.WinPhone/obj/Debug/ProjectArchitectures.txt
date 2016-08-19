@@ -1,0 +1,2 @@
+G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog.WinPhone\TripLog.WinPhone.csproj;neutral
+G:\Visual Studio 2015\Projects\TripLog\TripLog\TripLog\TripLog.csproj;neutral
